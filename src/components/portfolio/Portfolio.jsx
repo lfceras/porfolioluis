@@ -51,7 +51,7 @@ const Portfolio = () => {
               <img src={rick} alt="Not found" />
               <div className={styles.overlay}>
               <a
-                  href="https://github.com/lfceras/porfolioluis"
+                  href="https://github.com/lfceras/rick-and-morty"
                   target="_blank"
                   rel="noreferrer"
                 >
