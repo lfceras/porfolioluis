@@ -1,0 +1,23 @@
+body{
+  font-family: 'Righteous', cursive;
+}
+
+*{
+  box-sizing: border-box;
+  font-family: 'Work Sans';
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+:root {
+  font-family: 'Righteous', cursive;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+
+
