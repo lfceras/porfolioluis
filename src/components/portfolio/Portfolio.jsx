@@ -50,8 +50,14 @@ const Portfolio = () => {
             <div className={styles.proyecto}>
               <img src={rick} alt="Not found" />
               <div className={styles.overlay}>
+              <a
+                  href="https://github.com/lfceras/porfolioluis"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                 <h3>Proyecto Repaso</h3>
                 <p>Rick and Morty</p>
+                </a>
               </div>
             </div>
           </div>
