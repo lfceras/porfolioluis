@@ -8,7 +8,7 @@ import { useRef } from "react";
 const { VITE_SERVICE_ID, VITE_TEMPLATE_ID, VITE_PUBLIC_KEY } = import.meta.env;
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import swal from 'sweetalert';
+import swal from "sweetalert";
 
 const Contacto = () => {
   const form = useRef();
@@ -39,7 +39,7 @@ const Contacto = () => {
         .min(3, "Demasiado corto!"),
       phone: Yup.string()
         .required("Deja tu numero de telefono!!!")
-        .min(3, 'Demasiado corto'),
+        .min(3, "Demasiado corto"),
       email: Yup.string()
         .min(3, "Demasiado corto!")
         .email("Invalid email")
@@ -49,8 +49,8 @@ const Contacto = () => {
     }),
     onSubmit: (values, { resetForm }) => {
       sendEmail(values),
-      resetForm({ values: "" }),
-      swal("Listo!", "Tu mensaje ha sido enviado!", "success");
+        resetForm({ values: "" }),
+        swal("Listo!", "Tu mensaje ha sido enviado!", "success");
     },
   });
 
@@ -116,13 +116,14 @@ const Contacto = () => {
                 {formik.touched.message && formik.errors.message ? (
                   <div className={styles.errors}>{formik.errors.message}</div>
                 ) : null}
-                <button type="submit"
-                  disabled = {
+                <button
+                  type="submit"
+                  disabled={
                     formik.values.name === "" ||
                     formik.values.phone === "" ||
                     formik.values.email === "" ||
                     formik.values.message === "" ||
-                    formik.values.subject === "" 
+                    formik.values.subject === ""
                   }
                 >
                   Enviar Mensaje

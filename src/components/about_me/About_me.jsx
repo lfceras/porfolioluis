@@ -1,8 +1,10 @@
 import styles from "./about_me.module.css";
-import {LuGamepad2} from 'react-icons/lu' 
-import {ImHeadphones} from 'react-icons/im'
-import {FaPlane, FaBasketballBall, FaBook, FaCar} from 'react-icons/fa'
-import {BsCloudDownload} from 'react-icons/bs'
+import { LuGamepad2 } from "react-icons/lu";
+import { ImHeadphones } from "react-icons/im";
+import { FaPlane, FaBasketballBall, FaBook, FaCar } from "react-icons/fa";
+import { BsCloudDownload } from "react-icons/bs";
+import english from "../../curriculums/Curriculum-english.pdf";
+import spanish from "../../curriculums/Curriculum-spanish.pdf";
 
 const About_me = () => {
   return (
@@ -56,54 +58,55 @@ const About_me = () => {
               <h3>Intereses</h3>
               <div className={styles.contenedor_intereses}>
                 <div className={styles.interes}>
-                  <LuGamepad2
-                  size={40}
-                  color="white"/>
+                  <LuGamepad2 size={40} color="white" />
                   <span>JUEGOS</span>
                 </div>
                 <div className={styles.interes}>
-                  <ImHeadphones
-                  size={40}
-                  color="white"/>
+                  <ImHeadphones size={40} color="white" />
                   <span>MUSICA</span>
                 </div>
                 <div className={styles.interes}>
-                  <FaPlane
-                  size={40}
-                  color="white"/>
+                  <FaPlane size={40} color="white" />
                   <span>VIAJAR</span>
                 </div>
                 <div className={styles.interes}>
-                  <FaBasketballBall
-                  size={40}
-                  color="white"/>
+                  <FaBasketballBall size={40} color="white" />
                   <span>BASKET</span>
                 </div>
                 <div className={styles.interes}>
-                  <FaBook
-                  size={40}
-                  color="white"/>
+                  <FaBook size={40} color="white" />
                   <span>LIBROS</span>
                 </div>
                 <div className={styles.interes}>
-                  <FaCar 
-                  size={40}
-                  color="white"/>
+                  <FaCar size={40} color="white" />
                   <span>AUTOS</span>
                 </div>
               </div>
             </div>
           </div>
-          <button>
-            <a href="./images/curriculumv.pdf" download="Curriculum PDF">
-              Descargar CV
-            </a>
-            <BsCloudDownload
-            size={20}
-            style={{marginLeft:10, marginTop:5}}
-            />
-            <span className={styles.overlay}></span>
-          </button>
+          <div className={styles.buttonss}>
+            <button>
+              <a href={english} download="Curriculum English PDF">
+                Descargar CV English
+              </a>
+              <BsCloudDownload
+                size={15}
+                style={{ marginLeft: 10, marginTop: 5 }}
+              />
+              <span className={styles.overlay}></span>
+            </button>
+
+            <button>
+              <a href={spanish} download="Curriculum Spanish PDF">
+                Descargar CV Español
+              </a>
+              <BsCloudDownload
+                size={15}
+                style={{ marginLeft: 10, marginTop: 5 }}
+              />
+              <span className={styles.overlay}></span>
+            </button>
+          </div>
         </div>
       </section>
     </div>

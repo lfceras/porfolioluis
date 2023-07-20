@@ -89,6 +89,15 @@
   background-color: #1CB698;
 }
 
+.buttonss{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .sobremi button{
   cursor: pointer;
   background-color: transparent;
@@ -97,7 +106,7 @@
   display: block;
   margin: 20px auto;
   padding: 10px 22px;
-  font-size: 16px;
+  font-size: 10px;
   color: #fff;
   position: relative;
   z-index: 10;
@@ -127,11 +136,20 @@
   border-radius: 8px;
 }
 
+
+
 @media screen and (max-width: 768px){
   .sobremi .fila{
     display: block;
   }
   .sobremi .fila .col{
     width: fit-content;
+  }
+  .buttonss{
+    display: flex;
+    flex-direction: column;
+  }
+  .sobremi button{
+    font-size: 14px;
   }
 }
