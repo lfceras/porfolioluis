@@ -49,7 +49,7 @@ const About_me = () => {
                 </li>
                 <li>
                   <strong>Cargo</strong>
-                  <span>Software Developer</span>
+                  <span>Full Stack Web Developer</span>
                 </li>
               </ul>
             </div>
