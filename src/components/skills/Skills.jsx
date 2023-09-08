@@ -55,6 +55,25 @@ const Skills = () => {
                   </div>
                 </div>
               </div>
+
+              <div className={styles.skill_box}>
+                <span className={styles.title}>Tailwind CSS</span>
+                <div className={styles.skill_bar}>
+                  <div className={`${styles.skill_per} ${styles.react}`}>
+                    <span className={styles.tooltip}>60%</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className={styles.skill_box}>
+                <span className={styles.title}>Node JS</span>
+                <div className={styles.skill_bar}>
+                  <div className={`${styles.skill_per} ${styles.react}`}>
+                    <span className={styles.tooltip}>80%</span>
+                  </div>
+                </div>
+              </div>
+
             </div>
 
             {/* <!-- Professional Skills --> */}
